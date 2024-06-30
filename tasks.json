@@ -10,15 +10,6 @@
             "time": "12:20:49"
         },
         {
-            "id": 3,
-            "title": "Finish To do list",
-            "description": "A to do list app using python",
-            "deadline": "June 30",
-            "status": "Pending",
-            "date": "2024-06-29",
-            "time": "18:15:30"
-        },
-        {
             "id": 4,
             "title": "Meet Obell",
             "description": "Sessio relating to to do list app",
@@ -26,6 +17,15 @@
             "status": "Pending",
             "date": "2024-06-29",
             "time": "18:16:17"
+        },
+        {
+            "id": 4,
+            "title": "new task",
+            "description": "Create a new task",
+            "deadline": "20 June",
+            "status": "Pending",
+            "date": "2024-06-30",
+            "time": "13:45:49"
         }
     ]
 }

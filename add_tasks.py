@@ -4,23 +4,13 @@ import json
 # Define JSON file path
 file_path = "tasks.json"
 
-# Read JSON file and load it into a variable
-try:
-    with open(file_path, 'r') as file:
-        data = json.load(file)
-except (FileNotFoundError, json.JSONDecodeError):
-    print("File path not found or file is empty/invalid, initializing with an empty tasks list.")
-    data = {"tasks": []}
-
 # Initialize a class for adding tasks
 class AddTasks:
-
     def __init__(self, tasks):
         self.tasks = tasks
 
     # Initialize a method for creating new tasks
     def create_new_tasks(self, num_tasks): 
-
         # Initialize count to keep track of the number tasks added
         count = 0
         while count < num_tasks:
@@ -52,7 +42,3 @@ class AddTasks:
 
             # Add one to count to keep track of the added tasks
             count += 1
-
-# Example usage of AddTasks
-task_manager = AddTasks(data["tasks"])
-task_manager.create_new_tasks(2)
