@@ -1,28 +1,38 @@
-# simple to_do_python app ##
-This project is a simple to-do list application that allows users to manage their tasks. The application covers fundamental Python concepts such as data structures, loops, and basic user input/output. Users can add, view, and remove tasks, and the application supports saving and loading tasks to/from a file.
+# To-Do List Application
 
-## Features ##
-1. Add Task: Allows users to add tasks to the to-do list. Each task includes a name and a due date.
-2. View Tasks: Displays the list of tasks with their names and due dates.
-3. Remove Task: Users can remove tasks from the list by specifying the task name.
-4. Save/Load Tasks: Implements a way to save the to-do list to a file (e.g., a text file) and load it when the program starts.
+## Project Description
 
-## Usage ##
-1. Load the To-Do List Application
-The application will load the existing tasks from tasks.json when it starts. If the file is not found or is empty/invalid, it will initialize with an empty tasks list.
+This is a simple to-do list application that allows users to add, view, edit, and remove tasks. The project demonstrates fundamental Python concepts such as data structures, loops, and basic user input/output.
 
-2. Add Task
-To add a task, the user needs to provide:
+## Features
 
-Task Name
-Due Date
-The task will be added to the list and saved to tasks.json.
+- **Add Task**: Allows users to add tasks to the to-do list. Each task includes a title, description, due date, status, and timestamp.
+- **View Tasks**: Displays the list of tasks with their details.
+- **Edit Task**: Allows users to edit the details of existing tasks.
+- **Remove Task**: Users can remove tasks from the list by specifying the task title.
+- **Save/Load Tasks**: The application saves the to-do list to a JSON file (`tasks.json`) and loads it when the program starts.
 
-3. View Tasks
-Displays the list of all tasks with their names and due dates.
+## Project Structure
 
-4. Remove Task
-To remove a task, the user needs to provide the task name. If the task is found, it will be removed from the list and the changes will be saved to tasks.json.
+- `load_json.py`: Contains the function to load data from the JSON file.
+- `add_tasks.py`: Contains the `AddTasks` class for adding tasks.
+- `view_tasks.py`: Contains the `Viewtasks` class for viewing tasks.
+- `edit_tasks.py`: Contains the `Edittasks` class for editing tasks.
+- `delete_tasks.py`: Contains the `Deletetasks` class for deleting tasks.
+- `main.py`: Contains the `Managetasks` class and the main menu-driven interface.
 
-5. Save/Load Tasks
-Tasks are automatically saved to tasks.json after adding or removing a task. When the program starts, it will load the tasks from tasks.json.
+## Guidelines
+
+- Use dictionaries or lists to store tasks with their attributes (name, description, due date, status, and timestamp).
+- Implement a menu-driven interface where users can choose to add, view, edit, or remove tasks.
+- Use functions to modularize your code (e.g., separate functions for adding, viewing, editing, and removing tasks).
+- Implement error handling to ensure the program doesn't crash when the user enters incorrect input.
+- Provide a clear and user-friendly interface with instructions for the user.
+
+## How to Run the Project
+
+1. Ensure all the project files (`load_json.py`, `add_tasks.py`, `view_tasks.py`, `edit_tasks.py`, `delete_tasks.py`, and `main.py`) are in the same directory.
+2. Run `main.py` to start the application:
+
+   ```bash
+   python main.py
